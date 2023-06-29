@@ -1,8 +1,4 @@
-import type { ActionFunction, LoaderFunction } from "@remix-run/node";
-import { json } from "@vercel/remix";
 import { Badge } from "react-daisyui";
-
-
 
 import { CustomCardTitle } from "~/components/CustomCard";
 import CustomCard from "~/components/CustomCard/CustomCard";
@@ -11,12 +7,6 @@ import ErrorHandler from "~/components/ErrorHandler";
 
 import addPaymentFormImg from "./add-payment-form.png";
 import paymentPageImg from "./payment-page.png";
-
-type LoaderData = {};
-
-export const loader: LoaderFunction = async () => {
-  return json<LoaderData>({});
-};
 
 export const SheetsPayment = () => {
   return (
@@ -33,11 +23,6 @@ export const SheetsPayment = () => {
     </>
   );
 };
-
-export const action: ActionFunction = async () => {
-  return json({});
-};
-
 export const ErrorBoundary = ErrorHandler;
 
 export default SheetsPayment;

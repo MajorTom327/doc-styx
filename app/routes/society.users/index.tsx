@@ -1,6 +1,3 @@
-import type { ActionFunction, LoaderFunction } from "@remix-run/node";
-import { json } from "@vercel/remix";
-
 import { CustomCardTitle } from "~/components/CustomCard";
 import CustomCard from "~/components/CustomCard/CustomCard";
 import Bolder from "~/components/Documentation/Bolder";
@@ -11,12 +8,6 @@ import ErrorHandler from "~/components/ErrorHandler";
 
 import addUserFormImg from "./add-user-form.png";
 import usersImg from "./users.png";
-
-type LoaderData = {};
-
-export const loader: LoaderFunction = async () => {
-  return json<LoaderData>({});
-};
 
 export const SocietyUsers = () => {
   return (
@@ -68,10 +59,6 @@ export const SocietyUsers = () => {
       </CustomCard>
     </>
   );
-};
-
-export const action: ActionFunction = async () => {
-  return json({});
 };
 
 export const ErrorBoundary = ErrorHandler;

@@ -1,6 +1,9 @@
 import logo from "@assets/logo.png";
 import Paragraph from "@doc/Paragraph";
+import type { V2_MetaFunction } from "@vercel/remix";
 import RouteEnum from "~/refs/enum/route";
+
+import mergeMeta from "~/lib/mergeMeta";
 
 import { ButtonLink } from "~/components/ButtonLink";
 import { CustomCardActions, CustomCardTitle } from "~/components/CustomCard";
@@ -9,6 +12,27 @@ import DocImage from "~/components/Documentation/DocImage";
 import Image from "~/components/Image";
 
 import dashboardImg from "./dashboard.png";
+
+export const meta: V2_MetaFunction = mergeMeta([
+  {
+    property: "og:title",
+    content: "Documentation de l'application Styx",
+  },
+  {
+    property: "og:description",
+    content:
+      "Documentation de l'application Styx, outil de gestion pour crématorium",
+  },
+  {
+    property: "og:image",
+    content: dashboardImg,
+  },
+  {
+    name: "description",
+    content:
+      "Documentation de l'application Styx, outil de gestion pour crématorium",
+  },
+]);
 
 export default function Index() {
   return (

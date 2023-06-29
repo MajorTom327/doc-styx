@@ -3,8 +3,6 @@ import DocImage from "@doc/DocImage";
 import List, { ListItem } from "@doc/List";
 import Paragraph from "@doc/Paragraph";
 import Title from "@doc/Title";
-import type { ActionFunction, LoaderFunction } from "@remix-run/node";
-import { json } from "@vercel/remix";
 import { Divider } from "react-daisyui";
 import RouteEnum from "~/refs/enum/route";
 
@@ -14,12 +12,6 @@ import ErrorHandler from "~/components/ErrorHandler";
 
 import createSelectTypeImg from "./create-select-type.png";
 import viewSheetImg from "./inspect-sheet.png";
-
-type LoaderData = {};
-
-export const loader: LoaderFunction = async () => {
-  return json<LoaderData>({});
-};
 
 export const Sheets = () => {
   return (
@@ -82,10 +74,6 @@ export const Sheets = () => {
       </CustomCard>
     </>
   );
-};
-
-export const action: ActionFunction = async () => {
-  return json({});
 };
 
 export const ErrorBoundary = ErrorHandler;

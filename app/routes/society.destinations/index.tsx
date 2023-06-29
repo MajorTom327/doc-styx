@@ -1,5 +1,3 @@
-import type { ActionFunction, LoaderFunction } from "@remix-run/node";
-import { json } from "@vercel/remix";
 import RouteEnum from "~/refs/enum/route";
 
 import { CustomCardTitle } from "~/components/CustomCard";
@@ -11,11 +9,6 @@ import ErrorHandler from "~/components/ErrorHandler";
 
 import destinationsPageImg from "./destinations-page.png";
 
-type LoaderData = {};
-
-export const loader: LoaderFunction = async () => {
-  return json<LoaderData>({});
-};
 
 export const SocietyDestinations = () => {
   return (
@@ -38,10 +31,6 @@ export const SocietyDestinations = () => {
       </CustomCard>
     </>
   );
-};
-
-export const action: ActionFunction = async () => {
-  return json({});
 };
 
 export const ErrorBoundary = ErrorHandler;

@@ -1,5 +1,6 @@
-import type { ActionFunction, LoaderFunction } from "@remix-run/node";
-import { json } from "@vercel/remix";
+import type { V2_MetaFunction } from "@remix-run/node";
+
+import mergeMeta from "~/lib/mergeMeta";
 
 import { CustomCardTitle } from "~/components/CustomCard";
 import CustomCard from "~/components/CustomCard/CustomCard";
@@ -8,11 +9,20 @@ import Paragraph from "~/components/Documentation/Paragraph";
 import Title from "~/components/Documentation/Title";
 import ErrorHandler from "~/components/ErrorHandler";
 
-type LoaderData = {};
-
-export const loader: LoaderFunction = async () => {
-  return json<LoaderData>({});
-};
+export const meta: V2_MetaFunction = mergeMeta([
+  {
+    property: "og:title",
+    content: "Vie privée et transparence",
+  },
+  {
+    name: "og:description",
+    content: "Resumé de la vie privée et de la transparence de l'application.",
+  },
+  {
+    name: "description",
+    content: "Resumé de la vie privée et de la transparence de l'application.",
+  },
+]);
 
 export const Privacy = () => {
   return (
@@ -55,10 +65,6 @@ export const Privacy = () => {
       </CustomCard>
     </>
   );
-};
-
-export const action: ActionFunction = async () => {
-  return json({});
 };
 
 export const ErrorBoundary = ErrorHandler;

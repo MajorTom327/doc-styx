@@ -31,14 +31,14 @@ export const RouteErrorHandler: React.FC<Props> = ({ error }) => {
               imgAlt="Obi-Wan Kenobi saying 'I feel a disturbance in the force'"
             >
               <CustomCardTitle className="text-2xl">
-                I feel a disturbance in the force
+                J'ai ressenti un grand bouleversement de la Force
               </CustomCardTitle>
 
               <h1 className="text-4xl">{error.status}</h1>
               <h2 className="text-2xl">{error.statusText}</h2>
               <CustomCardActions>
                 <ButtonLink color="ghost" to={RouteEnum.home}>
-                  Go back to the home page
+                  Retourner a l'accueil
                 </ButtonLink>
               </CustomCardActions>
             </CustomCard>

@@ -1,29 +1,19 @@
 import { cssBundleHref } from "@remix-run/css-bundle";
-import type {
-  LinksFunction,
-  LoaderFunction,
-  V2_MetaFunction,
-} from "@remix-run/node";
+import type { LinksFunction, LoaderFunction, V2_MetaFunction } from "@remix-run/node";
 import { json } from "@remix-run/node";
-import {
-  Links,
-  LiveReload,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-  useLoaderData,
-} from "@remix-run/react";
-import {
-  AuthenticityTokenProvider,
-  createAuthenticityToken,
-} from "remix-utils";
+import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration, useLoaderData } from "@remix-run/react";
+import { AuthenticityTokenProvider, createAuthenticityToken } from "remix-utils";
+
+
 
 import { ErrorHandler } from "~/components/ErrorHandler";
+
+
 
 import Layout from "./components/Layout/Layout";
 import baseStyle from "./index.css";
 import { sessionStorage } from "./services.server/session";
+
 
 export const links: LinksFunction = () => [
   ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
@@ -42,7 +32,7 @@ export const loader: LoaderFunction = async ({ request }) => {
   const csrf = createAuthenticityToken(session);
 
   return json(
-    { csrf },
+    { csrf, appUrl: process.env.APP_URL },
     {
       headers: {
         "Set-Cookie": await sessionStorage.commitSession(session),
@@ -52,13 +42,15 @@ export const loader: LoaderFunction = async ({ request }) => {
 };
 
 export default function App() {
-  const { csrf } = useLoaderData<typeof loader>();
+  const { csrf, appUrl } = useLoaderData<typeof loader>();
 
   return (
     <html lang="en">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={appUrl} />
         <Meta />
         <Links />
       </head>
