@@ -24,10 +24,22 @@ export const SidebarContent: React.FC = () => {
           </DocLink>
         </Menu.Item>
         <Menu.Item>
-          <DocLink nav end to={RouteEnum.society}>
+          <DocLink nav end to={RouteEnum.society} withSubmenu>
             Société
           </DocLink>
         </Menu.Item>
+        <SidebarSubmenu base={RouteEnum.society}>
+          <Menu>
+            <Menu.Item>
+              <DocLink nav end to={RouteEnum.societyUsers}>
+                Utilisateurs
+              </DocLink>
+              <DocLink nav end to={RouteEnum.societyDestinations}>
+                Destinations
+              </DocLink>
+            </Menu.Item>
+          </Menu>
+        </SidebarSubmenu>
         <Menu.Item>
           <DocLink nav end to={RouteEnum.sheets} withSubmenu>
             Fiches

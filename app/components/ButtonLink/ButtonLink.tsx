@@ -4,6 +4,8 @@ import type { ReactNode } from "react";
 import React from "react";
 import type RouteEnum from "~/refs/enum/route";
 
+
+
 import DocLink from "../DocLink/DocLink";
 
 type Props = {
@@ -58,6 +60,8 @@ export const ButtonLink: React.FC<Props> = ({
   params,
 }) => {
   const classes = classNames(
+    "no-underline",
+    "text-neutral",
     "btn",
     {
       "btn-lg": size === "lg",
@@ -72,14 +76,14 @@ export const ButtonLink: React.FC<Props> = ({
       "btn-link": variant === "link",
     },
     {
-      "btn-primary": color === "primary",
-      "btn-secondary": color === "secondary",
-      "btn-accent": color === "accent",
-      "btn-info": color === "info",
-      "btn-success": color === "success",
-      "btn-warning": color === "warning",
-      "btn-error": color === "error",
-      "btn-ghost": color === "ghost",
+      "btn-primary text-primary-content": color === "primary",
+      "btn-secondary text-secondary-content": color === "secondary",
+      "btn-accent text-accent-content": color === "accent",
+      "btn-info text-info-content": color === "info",
+      "btn-success text-success-content": color === "success",
+      "btn-warning text-warning-content": color === "warning",
+      "btn-error text-error-content": color === "error",
+      "btn-ghost text-neutral": color === "ghost",
     },
     {
       "btn-wide": wide,

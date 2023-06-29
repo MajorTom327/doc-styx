@@ -5,7 +5,10 @@ import RouteEnum from "~/refs/enum/route";
 import { ButtonLink } from "~/components/ButtonLink";
 import { CustomCardActions, CustomCardTitle } from "~/components/CustomCard";
 import CustomCard from "~/components/CustomCard/CustomCard";
+import DocImage from "~/components/Documentation/DocImage";
 import Image from "~/components/Image";
+
+import dashboardImg from "./dashboard.png";
 
 export default function Index() {
   return (
@@ -25,6 +28,7 @@ export default function Index() {
           C'est notament utile lors de la prise en main de l'application ou pour
           comprendre comment fonctionne certaines fonctionnalités.
         </Paragraph>
+        <DocImage src={dashboardImg} alt="Affichage du tableau de bord" />
         <Paragraph>
           Cette documentation est divisée en plusieurs parties, chacune d'entre
           elles correspond à une fonctionnalité de l'application.

@@ -2,8 +2,11 @@ import { Links, Meta } from "@remix-run/react";
 import type { ErrorResponse } from "@remix-run/router";
 import React from "react";
 import { Card } from "react-daisyui";
+import RouteEnum from "~/refs/enum/route";
 
 import { ButtonLink } from "../ButtonLink";
+import { CustomCardActions, CustomCardTitle } from "../CustomCard";
+import CustomCard from "../CustomCard/CustomCard";
 import errorImage from "./error.jpeg";
 
 type Props = {
@@ -22,25 +25,23 @@ export const RouteErrorHandler: React.FC<Props> = ({ error }) => {
         </head>
         <body>
           <div className="flex justify-center items-center w-scree h-screen">
-            <Card className="-mt-32">
-              <Card.Image
-                src={errorImage}
-                alt="Obi-Wan Kenobi saying 'I feel a disturbance in the force'"
-              />
-              <Card.Body>
-                <Card.Title className="text-2xl">
-                  I feel a disturbance in the force
-                </Card.Title>
+            <CustomCard
+              className="-mt-32"
+              imgSrc={errorImage}
+              imgAlt="Obi-Wan Kenobi saying 'I feel a disturbance in the force'"
+            >
+              <CustomCardTitle className="text-2xl">
+                I feel a disturbance in the force
+              </CustomCardTitle>
 
-                <h1 className="text-4xl">{error.status}</h1>
-                <h2 className="text-2xl">{error.statusText}</h2>
-                <Card.Actions>
-                  <ButtonLink color="ghost" to="/">
-                    Go back to the home page
-                  </ButtonLink>
-                </Card.Actions>
-              </Card.Body>
-            </Card>
+              <h1 className="text-4xl">{error.status}</h1>
+              <h2 className="text-2xl">{error.statusText}</h2>
+              <CustomCardActions>
+                <ButtonLink color="ghost" to={RouteEnum.home}>
+                  Go back to the home page
+                </ButtonLink>
+              </CustomCardActions>
+            </CustomCard>
           </div>
         </body>
       </html>

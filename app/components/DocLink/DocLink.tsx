@@ -1,4 +1,5 @@
 import { Link, NavLink, useLocation } from "@remix-run/react";
+import classNames from "classnames";
 import React from "react";
 import { FaChevronDown, FaChevronRight } from "react-icons/fa";
 import type RouteEnum from "~/refs/enum/route";
@@ -31,9 +32,16 @@ export const DocLink: React.FC<Props> = ({
 
   const isCurrent = pathname.startsWith(path);
 
+  const classes = classNames(
+    {
+      "text-primary underline": !nav,
+    },
+    className
+  );
+
   if (nav) {
     return (
-      <NavLink to={path} className={className} end={end}>
+      <NavLink to={path} className={classes} end={end}>
         {children}
         {withSubmenu &&
           (isCurrent ? (
@@ -46,7 +54,7 @@ export const DocLink: React.FC<Props> = ({
   }
   return (
     <>
-      <Link to={path} prefetch={prefetch} className={className}>
+      <Link to={path} prefetch={prefetch} className={classes}>
         {children}
       </Link>
     </>

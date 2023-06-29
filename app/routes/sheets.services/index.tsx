@@ -1,9 +1,14 @@
 import type { ActionFunction, LoaderFunction } from "@remix-run/node";
 import { json } from "@vercel/remix";
 
+
+
 import { CustomCardTitle } from "~/components/CustomCard";
 import CustomCard from "~/components/CustomCard/CustomCard";
+import DocImage from "~/components/Documentation/DocImage";
 import ErrorHandler from "~/components/ErrorHandler";
+
+import servicesFormImg from "./services-form.png";
 
 type LoaderData = {};
 
@@ -16,6 +21,7 @@ export const SheetsServices = () => {
     <>
       <CustomCard>
         <CustomCardTitle>Services associés à une fiche</CustomCardTitle>
+        <DocImage src={servicesFormImg} />
       </CustomCard>
     </>
   );

@@ -18,7 +18,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
         <Footer className="p-10 bg-secondary/20 text-secondary-content">
           <div>
             <Footer.Title>Services</Footer.Title>
-            <a className="link link-hover">Styx ©️ {DateTime.local().year}</a>
+            <a className="link link-hover">Styx ©️ 2017-{DateTime.local().year}</a>
           </div>
         </Footer>
       </Sidebar>
