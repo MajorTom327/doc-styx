@@ -7,12 +7,15 @@ import { Card } from "react-daisyui";
 
 import CustomCardImage from "./CustomCardImage";
 
+
 type Props = {
   imgSrc?: string;
   imgAlt?: string;
   children: React.ReactNode;
   className?: string;
+
   imgFullWidth?: boolean;
+  imageClassName?: string;
 };
 
 export const CustomCard: React.FC<Props> = ({
@@ -21,6 +24,7 @@ export const CustomCard: React.FC<Props> = ({
   imgAlt,
   className,
   imgFullWidth,
+  imageClassName,
 }) => {
   const classes = classNames(
     "bg-base-200 shadow-lg text-base-content",
@@ -31,7 +35,11 @@ export const CustomCard: React.FC<Props> = ({
     <>
       <Card className={classes} imageFull={imgFullWidth}>
         {isNotNilOrEmpty(imgSrc) && (
-          <CustomCardImage src={imgSrc!} alt={imgAlt} />
+          <CustomCardImage
+            src={imgSrc!}
+            alt={imgAlt}
+            className={imageClassName}
+          />
         )}
         <Card.Body>{children}</Card.Body>
       </Card>

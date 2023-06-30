@@ -70,6 +70,11 @@ export const SidebarContent: React.FC = () => {
           </Menu>
         </SidebarSubmenu>
         <Menu.Item>
+          <DocLink nav to={RouteEnum.statistics}>
+            Statistiques
+          </DocLink>
+        </Menu.Item>
+        <Menu.Item>
           <DocLink nav to={RouteEnum.privacy}>
             Vie privée et transparence
           </DocLink>

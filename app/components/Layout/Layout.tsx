@@ -14,7 +14,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
     <>
       <Sidebar>
         <Navbar />
-        <div className="px-4 min-h-screen">{children}</div>
+        <div className="px-4 min-h-screen flex flex-col gap-4">{children}</div>
         <Footer className="p-10 bg-secondary/20 text-secondary-content">
           <div>
             <Footer.Title>Services</Footer.Title>

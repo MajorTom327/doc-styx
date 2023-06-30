@@ -10,6 +10,7 @@ export enum RouteEnum {
   sheetCremation = "/sheets/cremation",
   sheetServices = "/sheets/services",
   sheetPayment = "/sheets/payment",
+  statistics = "/statistics",
   privacy = "/privacy",
 }
 
