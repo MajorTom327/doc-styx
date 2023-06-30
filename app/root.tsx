@@ -31,8 +31,10 @@ export const loader: LoaderFunction = async ({ request }) => {
 
   const csrf = createAuthenticityToken(session);
 
+  const appUrl = process.env.APP_URL;
+
   return json(
-    { csrf, appUrl: process.env.APP_URL },
+    { csrf, appUrl },
     {
       headers: {
         "Set-Cookie": await sessionStorage.commitSession(session),
