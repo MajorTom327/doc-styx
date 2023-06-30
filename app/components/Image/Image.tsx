@@ -1,4 +1,5 @@
 import { propOr } from "ramda";
+import { isNilOrEmpty } from "ramda-adjunct";
 import React from "react";
 
 
@@ -18,7 +19,11 @@ type Options = Partial<{
 }>;
 
 export const getImageUrl = (src: string, options?: Options) => {
-  const url = new URL("/_vercel/image", process.env.VERCEL_URL);
+  if (isNilOrEmpty(window?.location)) {
+    return "";
+  }
+
+  const url = new URL("/_vercel/image", window.location.origin);
 
   url.searchParams.append("url", src);
 
