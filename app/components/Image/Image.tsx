@@ -1,7 +1,5 @@
 import { propOr } from "ramda";
-import { isNilOrEmpty } from "ramda-adjunct";
 import React from "react";
-
 
 type Props = {
   src: string;
@@ -19,11 +17,7 @@ type Options = Partial<{
 }>;
 
 export const getImageUrl = (src: string, options?: Options) => {
-  if (isNilOrEmpty(window?.location)) {
-    return "";
-  }
-
-  const url = new URL("/_vercel/image", window.location.origin);
+  const url = new URL("/_vercel/image", "https://doc.styx-sys.com");
 
   url.searchParams.append("url", src);
 
