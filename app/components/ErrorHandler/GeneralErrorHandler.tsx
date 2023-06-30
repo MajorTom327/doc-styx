@@ -2,7 +2,10 @@ import { isNotNilOrEmpty } from "ramda-adjunct";
 import React from "react";
 import { CodeMockup } from "react-daisyui";
 
-import { isDevelopment } from "~/lib/isEnv";
+
+
+import { isDevelopment } from "~/lib/isEnv.server";
+
 
 type Props = {
   error: any;

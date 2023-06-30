@@ -2,7 +2,10 @@ import { createCookieSessionStorage } from "@vercel/remix";
 import assert from "node:assert";
 import { isNil } from "ramda";
 
-import { isProduction } from "~/lib/isEnv";
+
+
+import { isProduction } from "~/lib/isEnv.server";
+
 
 const sessionSecret = process.env.SESSION_SECRET;
 

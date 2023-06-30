@@ -1,6 +1,10 @@
 import { propOr } from "ramda";
 import React from "react";
 
+
+
+import { isDevelopment } from "~/lib/isEnv.server";
+
 type Props = {
   src: string;
   className?: string;
@@ -17,7 +21,7 @@ type Options = Partial<{
 }>;
 
 export const getImageUrl = (src: string, options?: Options) => {
-  if (process.env.NODE_ENV === "development") {
+  if (isDevelopment()) {
     return src;
   }
 
