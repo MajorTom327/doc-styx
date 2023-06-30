@@ -90,7 +90,7 @@ export const GettingStarted = () => {
         <CustomCardActions>
           <div className="w-full flex justify-end">
             <ButtonLink color="primary" to={RouteEnum.statistics}>
-              Page des statistics
+              Page des statistiques
               <FaChevronRight className="ml-2" />
             </ButtonLink>
           </div>
