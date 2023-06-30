@@ -2,9 +2,6 @@ import { propOr } from "ramda";
 import React from "react";
 
 
-
-import { isDevelopment } from "~/lib/isEnv.server";
-
 type Props = {
   src: string;
   className?: string;
@@ -21,10 +18,6 @@ type Options = Partial<{
 }>;
 
 export const getImageUrl = (src: string, options?: Options) => {
-  if (isDevelopment()) {
-    return src;
-  }
-
   const url = new URL("/_vercel/image", process.env.APP_URL);
 
   url.searchParams.append("url", src);

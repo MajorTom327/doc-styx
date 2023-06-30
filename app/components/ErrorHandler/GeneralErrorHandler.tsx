@@ -3,10 +3,6 @@ import React from "react";
 import { CodeMockup } from "react-daisyui";
 
 
-
-import { isDevelopment } from "~/lib/isEnv.server";
-
-
 type Props = {
   error: any;
 };
@@ -22,7 +18,7 @@ export const GeneralErrorHandler: React.FC<Props> = ({ error }) => {
               {error.message || "Something goes wrong !"}
             </h2>
           </div>
-          {isDevelopment() && isNotNilOrEmpty(error.stack) && (
+          {isNotNilOrEmpty(error.stack) && (
             <CodeMockup>
               <CodeMockup.Line>
                 {error.stack.replace(/ {2,}/gi, "        ")}
