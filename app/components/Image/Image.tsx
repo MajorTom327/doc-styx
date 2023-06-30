@@ -18,7 +18,7 @@ type Options = Partial<{
 }>;
 
 export const getImageUrl = (src: string, options?: Options) => {
-  const url = new URL("/_vercel/image", process.env.APP_URL);
+  const url = new URL("/_vercel/image", window.location.origin);
 
   url.searchParams.append("url", src);
 
