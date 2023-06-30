@@ -31,7 +31,8 @@ export const loader: LoaderFunction = async ({ request }) => {
 
   const csrf = createAuthenticityToken(session);
 
-  const appUrl = process.env.APP_URL;
+  const appUrl = new URL(request.url).origin;
+
 
   return json(
     { csrf, appUrl },
