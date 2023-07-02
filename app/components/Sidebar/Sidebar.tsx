@@ -49,7 +49,7 @@ export const SidebarContent: React.FC = () => {
           <Menu>
             <Menu.Item>
               <DocLink nav end to={RouteEnum.sheetCivility}>
-                Civility
+                Civilité
               </DocLink>
             </Menu.Item>
             <Menu.Item>

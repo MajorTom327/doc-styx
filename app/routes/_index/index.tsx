@@ -46,7 +46,7 @@ export default function Index() {
             Bienvenue sur la documentation de l'application Styx.
           </h1>
         </CustomCardTitle>
-        <Paragraph indent>
+        <Paragraph>
           Cette documentation a pour but de vous aider à comprendre comment
           utiliser l'application Styx de la manière la plus efficace possible.
           Elle est notamment utile lors de la prise en main de l'application, ou

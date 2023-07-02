@@ -23,8 +23,8 @@ export const Society = () => {
         </Paragraph>
 
         <Paragraph>
-          En cliquant sur votre e-mail, vous pouvez trouver l'option permettant
-          d'accéder a la page de la société afin de mettre à jour ses
+          En cliquant sur votre adresse e-mail, vous pouvez trouver l'option
+          permettant d'accéder a la page de la société afin de mettre à jour ses
           informations. <br /> Vous y trouverez notamemnt : <br />
           - le Siret, <br />
           - le numéro de téléphone, <br />

@@ -18,7 +18,7 @@ export const Sheets = () => {
     <>
       <CustomCard>
         <CustomCardTitle>Les fiches</CustomCardTitle>
-        <Paragraph indent>
+        <Paragraph>
           Les fiches sont la pierre angulaire de l'application Styx. Elles
           permettent de définir un <Bolder>défunt</Bolder> ou un{" "}
           <Bolder>commanditaire</Bolder>. Tout utilisateur au sein de la société
@@ -27,7 +27,7 @@ export const Sheets = () => {
         </Paragraph>
 
         <Title>Création d'une fiche</Title>
-        <Paragraph indent>
+        <Paragraph>
           La création d'une fiche se fait en plusieurs étapes. <br />
           La première étape consiste à sélectionner le type de fiche afin de
           définir s'il s'agit d'un défunt ou d'un reliquaire. <br /> Cela permet
@@ -37,7 +37,7 @@ export const Sheets = () => {
 
         <DocImage src={createSelectTypeImg} />
 
-        <Paragraph indent>
+        <Paragraph>
           La deuxième étape consiste à remplir les formulaires de qualification.
           La fiche est définie en plusieurs étapes :
         </Paragraph>
@@ -63,7 +63,7 @@ export const Sheets = () => {
           </div>
         </div>
 
-        <Paragraph indent>
+        <Paragraph>
           Les fiches permettent aussi de qualifier les documents associés à
           cette fiche ainsi que de les consulter. <br /> On y retrouve toutes
           les informations nécessaires à la génération d'une facture ainsi qu'à
