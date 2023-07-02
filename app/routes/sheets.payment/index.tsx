@@ -17,22 +17,24 @@ export const SheetsPayment = () => {
       <CustomCard>
         <CustomCardTitle>
           Paiement d'une fiche
-          <Badge>Si la fiche a des services associé</Badge>
+          <Badge>Si la fiche a des services associés</Badge>
         </CustomCardTitle>
 
         <Paragraph>
           La page des paiements permet d'associer des paiements à une fiche. On
-          peut ici informer qu'une fiche a ete payer en partie ou en totalité.
-          Et on peut aussi noter le moyen de paiement utilisé pour la facture.
+          peut y informer qu'une fiche a été payée en partie ou en totalité. On
+          peut aussi y noter le moyen de paiement utilisé pour la facture.{" "}
+          <br />
           Un résumé des paiments est affiché en haut de la page.
         </Paragraph>
         <DocImage src={paymentPageImg} alt="Page de liste des paiements" />
 
         <Paragraph>
-          L'ajout d'un paiement se fait a travers la modale d'ajout de paiement
-          qu'on accède en cliquant sur le bouton "+". On peut y selectionner le
-          moyen de paiement, la date du paiement, le montant ainsi qu'une note
-          sur le paiement (Par exemple y placer le numéro de chèque)
+          L'ajout d'un paiement se fait à travers la fenêtre modale d'ajout de
+          paiement, accessible en cliquant sur le bouton "+". On peut y
+          sélectionner le moyen de paiement, la date de celui-ci, le montant
+          ainsi qu'une note sur le paiement (Par exemple : Y placer le numéro de
+          chèque.)
         </Paragraph>
         <DocImage src={addPaymentFormImg} alt="Modale d'ajout des paiements" />
       </CustomCard>

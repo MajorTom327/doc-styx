@@ -20,26 +20,26 @@ export const Sheets = () => {
         <CustomCardTitle>Les fiches</CustomCardTitle>
         <Paragraph indent>
           Les fiches sont la pierre angulaire de l'application Styx. Elles
-          permettent de definir un <Bolder>défunt</Bolder> ou un{" "}
-          <Bolder>commanditaire</Bolder>. Tout utilisateur au sein de la societe
-          est capable de creer une fiche et elles sont associe a la{" "}
-          <Bolder>société</Bolder> dont fait parti l'utilisateur.
+          permettent de définir un <Bolder>défunt</Bolder> ou un{" "}
+          <Bolder>commanditaire</Bolder>. Tout utilisateur au sein de la société
+          est capable de créer une fiche qui sera ensuite associé à la{" "}
+          <Bolder>société</Bolder> dont fait partie l'utilisateur.
         </Paragraph>
 
         <Title>Création d'une fiche</Title>
         <Paragraph indent>
-          La création d'une fiche se fait en plusieurs étapes. La première étape
-          consiste à selectionner le type de fiche afin de définir si il s'agit
-          d'un défunt ou d'un reliquaire. Cela permet de créer la fiche en
-          brouillon et donne acces a la qualification de celle ci a l'aide de
-          formulaires.
+          La création d'une fiche se fait en plusieurs étapes. <br />
+          La première étape consiste à sélectionner le type de fiche afin de
+          définir s'il s'agit d'un défunt ou d'un reliquaire. <br /> Cela permet
+          de créer la fiche en brouillon et donne accès à la qualification de
+          celle -ci à l'aide de formulaires.
         </Paragraph>
 
         <DocImage src={createSelectTypeImg} />
 
         <Paragraph indent>
-          La deuxieme étape consiste a remplir les formulaires de qualification.
-          La fiche est definie en plusieurs étapes:
+          La deuxième étape consiste à remplir les formulaires de qualification.
+          La fiche est définie en plusieurs étapes :
         </Paragraph>
 
         <div className="flex gap-2 justify-stretch">
@@ -64,10 +64,10 @@ export const Sheets = () => {
         </div>
 
         <Paragraph indent>
-          Les fiches permettent aussi de qualitifer les documents associe a
-          cette fiche ainsi que de les consulter. On y retrouve toutes les
-          informations necessaire à la génération d'une facture ainsi qu'à un
-          certificat de crémation.
+          Les fiches permettent aussi de qualifier les documents associés à
+          cette fiche ainsi que de les consulter. <br /> On y retrouve toutes
+          les informations nécessaires à la génération d'une facture ainsi qu'à
+          un certificat de crémation.
         </Paragraph>
 
         <DocImage src={viewSheetImg} />

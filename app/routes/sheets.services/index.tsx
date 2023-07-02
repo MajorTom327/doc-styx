@@ -12,10 +12,11 @@ export const SheetsServices = () => {
       <CustomCard>
         <CustomCardTitle>Services associés à une fiche</CustomCardTitle>
         <Paragraph>
-          La page des services d'une fiche permet d'appliquer des services a une
-          fiche afin de completer les informations de celle-ci ainsi de remplir
-          la facture. Vous y retrouvez les services defini pour la societe et
-          vous pourrez pre-visualiser les informations de facturation.
+          La page des services d'une fiche permet : <br />- D'appliquer des
+          services à une fiche afin de compléter les informations de celle-ci
+          <br />- Remplir la facture. <br /> Vous y retrouverez les services
+          définis pour la société et vous pourrez prévisualiser les informations
+          de facturation.
         </Paragraph>
         <DocImage src={servicesFormImg} />
       </CustomCard>

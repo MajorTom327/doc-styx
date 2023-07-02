@@ -23,19 +23,22 @@ export const Society = () => {
         </Paragraph>
 
         <Paragraph>
-          En cliquant sur votre email, vous pouvez trouver l'option permetant
-          d'acceder a la page de la societe afin de mettre a jour ses
-          informations. Vous y trouverez notament, le Siret, le numero de
-          téléphone, l'adresse, le nom de la société ainsi que le logo pour
-          l'entreprise. Vous y trouverez aussi les options permettant de{" "}
-          <DocLink to={RouteEnum.societyUsers}>gerer les utilisateurs</DocLink>,
+          En cliquant sur votre e-mail, vous pouvez trouver l'option permettant
+          d'accéder a la page de la société afin de mettre à jour ses
+          informations. <br /> Vous y trouverez notamemnt : <br />
+          - le Siret, <br />
+          - le numéro de téléphone, <br />
+          - l'adresse, <br />
+          - le nom de la société, <br /> - le logo pour l'entreprise.
+          <br /> Vous y trouverez aussi les options permettant de{" "}
+          <DocLink to={RouteEnum.societyUsers}>gérer les utilisateurs</DocLink>,
           de{" "}
           <DocLink to={RouteEnum.societyDestinations}>
             définir les destinations
           </DocLink>{" "}
           ou encore de{" "}
           <DocLink to={RouteEnum.societySubscription}>
-            gerer votre abonnement
+            gérer votre abonnement
           </DocLink>
         </Paragraph>
         <DocImage src={generalInformationsImg} />

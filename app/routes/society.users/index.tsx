@@ -15,45 +15,45 @@ export const SocietyUsers = () => {
       <CustomCard>
         <CustomCardTitle>Utilisateurs de la société</CustomCardTitle>
         <Paragraph>
-          Les utilisateurs de la societe sont les membres de celle ci, ceux-ci
-          detiennent un compte. Vous pouvez ici les gerer directement en
-          ajoutant des comptes ou en les desactivant/supprimant.
+          Les utilisateurs de la société sont les membres de celle ci. Ceux-ci
+          detiennent un compte. Vous pouvez ici les gérer directement en
+          ajoutant des comptes ou en les désactivant/supprimant.
         </Paragraph>
         <DocImage
           src={usersImg}
-          alt="Page affichant la liste des utilisateur present dans la société"
+          alt="Page affichant la liste des utilisateurs présents dans la société"
         />
 
         <Paragraph>
-          Les utilisateurs défini sur cette page sont ceux a qui l'on pourra
-          attribuer des fiches (Les definir comme en charge de la fiche){" "}
+          Les utilisateurs définis sur cette page sont ceux à qui l'on pourra
+          attribuer des fiches (Les définir comme en charge de la fiche){" "}
           <Bolder>si l'utilisateur n'est pas désactivé.</Bolder>
-          Pour savoir si un utilisateur est actif il suffit de regarder la petit
-          pastille verte (Si actif) ou rouge (Si désactivé). Vous ne pouvez pas
-          desactiver ou supprimer votre propre compte.
+          Pour savoir si un utilisateur est actif, il suffit de regarder la
+          petite pastille verte (Si actif) ou rouge (Si désactivé). <br /> Vous
+          ne pouvez pas désactiver ou supprimer votre propre compte.
         </Paragraph>
 
         <Title>Invitation d'un nouvel utilisateur</Title>
 
         <Paragraph>
-          L'invitation d'un nouvel utilisateur au sein de la societe se fait a
+          L'invitation d'un nouvel utilisateur au sein de la société se fait à
           travers un formulaire simple demandant certaines informations pour
-          configurer le nouveau compte. Il s'agit notamment de la civilite de la
-          personne ainsi que de son addresse mail associée. Une fois valider,
+          configurer le nouveau compte. Il s'agit notamment de la civilité de la
+          personne ainsi que de son addresse e-mail associée. Une fois validées,
           l'utilisateur recevra un email pour accepter l'invitation au sein de
-          votre societe.
+          votre société.
         </Paragraph>
         <DocImage
           src={addUserFormImg}
-          alt="Formulaire d'invitation d'un utilisateur dans la societe"
+          alt="Formulaire d'invitation d'un utilisateur dans la société"
         />
 
         <Paragraph>
           <br />
-          <Bolder>Si l'utilisateur n'a pas de compte:</Bolder>
+          <Bolder>Si l'utilisateur n'a pas de compte :</Bolder>
           <br />
-          Celui ci pourra tout de meme valider l'invitation mais il devra
-          utilise l'option pour reinitialiser son mot de passe afin de pouvoir
+          Celui ci pourra tout de même valider l'invitation, mais il devra
+          utiliser l'option pour réinitialiser son mot de passe afin de pouvoir
           se connecter.
         </Paragraph>
       </CustomCard>

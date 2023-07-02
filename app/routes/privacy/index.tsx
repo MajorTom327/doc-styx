@@ -31,9 +31,10 @@ export const Privacy = () => {
         <CustomCardTitle>Vie privée et transparence</CustomCardTitle>
         <Paragraph>
           Les données que vous entrez dans l'application sont stockées dans des
-          services Européen conformement au RGPD. L'application est hébergée sur
-          Vercel, qui est conforme au RGPD. Notament sur un Datacenter situé en
-          Europe. Aucune donnée n'est partagée avec des tiers.
+          services européens, conformément au Règlement Général sur la
+          Protection des Données. <br /> L'application est hébergée sur Vercel
+          qui est conforme au RGPD, notamment sur un datacenter situé en Europe.
+          Aucune donnée n'est partagée avec des tiers.
         </Paragraph>
 
         <Title className="text-center">
@@ -42,17 +43,17 @@ export const Privacy = () => {
         <Title className="text-xl underline">Services:</Title>
 
         <List>
-          <ListItem>Analitique: Aucun</ListItem>
-          <ListItem>Base de donnée: Scaleway</ListItem>
-          <ListItem>Stockage des images: Scaleway</ListItem>
-          <ListItem>Emails: Scaleway</ListItem>
-          <ListItem>Systême de paiement: Revolut</ListItem>
-          <ListItem>Hébergement: Vercel</ListItem>
+          <ListItem>Analytique : Aucun</ListItem>
+          <ListItem>Base de données : Scaleway</ListItem>
+          <ListItem>Stockage des images : Scaleway</ListItem>
+          <ListItem>E-mails : Scaleway</ListItem>
+          <ListItem>Système de paiement : Revolut</ListItem>
+          <ListItem>Hébergement : Vercel</ListItem>
         </List>
 
         <Paragraph className="my-4">
-          En cas de demande particuliere sur les donnees n'hesitez pas a me
-          contacter:
+          En cas de demande particulière sur les données, n'hesitez pas à me
+          contacter :
         </Paragraph>
         <div className="flex justify-center w-full my-4">
           <a

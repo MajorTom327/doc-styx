@@ -17,16 +17,16 @@ export const SocietyDestinations = () => {
         <CustomCardTitle>Destinations</CustomCardTitle>
 
         <Paragraph>
-          L'option de destination permet de definir une liste d'options
-          disponnible sur les fiches dans la rubrique{" "}
+          L'option de destination permet de définir une liste d'options
+          disponibles sur les fiches dans la rubrique{" "}
           <DocLink to={RouteEnum.sheetCremation}>crémation</DocLink> pour la
           destination des cendres. Vous pouvez rajouter ici facilement des
-          elements en tant que destination ou les supprimer.
+          éléments en tant que destination, ou les supprimer.
         </Paragraph>
 
         <DocImage
           src={destinationsPageImg}
-          alt="Affichage de la liste des destinations actuellement disponnible dans l'application"
+          alt="Affichage de la liste des destinations actuellement disponibles dans l'application"
         />
       </CustomCard>
     </>

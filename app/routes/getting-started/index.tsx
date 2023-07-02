@@ -19,16 +19,16 @@ export const GettingStarted = () => {
         <CustomCardTitle>1 - Configurer sa société</CustomCardTitle>
 
         <Paragraph>
-          Pour démarrer rapidement, vous devez acceder a votre compte afin de
-          remplir les informations de base de la societe ainsi que de charger le
-          logo de la société.
+          Pour démarrer rapidement, vous devez accéder à votre compte afin de
+          remplir les informations de base de votre société ainsi que de charger le
+          logo de celle-ci.
         </Paragraph>
         <DocImage src={societyImg} alt="Page de la société" />
 
         <CustomCardActions>
           <div className="w-full flex justify-end">
             <ButtonLink color="primary" to={RouteEnum.society}>
-              Gerer les informations de la société
+              Gérer les informations de la société
               <FaChevronRight className="ml-2" />
             </ButtonLink>
           </div>
@@ -50,7 +50,7 @@ export const GettingStarted = () => {
         <CustomCardActions>
           <div className="w-full flex justify-end">
             <ButtonLink color="primary" to={RouteEnum.societyUsers}>
-              Gerer les utilisateurs
+              Gérer les utilisateurs
               <FaChevronRight className="ml-2" />
             </ButtonLink>
           </div>
@@ -60,7 +60,7 @@ export const GettingStarted = () => {
       <CustomCard>
         <CustomCardTitle>3 - Création de fiche</CustomCardTitle>
         <Paragraph>
-          Une fois ces information remplie, vous pouvez commencer à créer des
+          Une fois ces informations remplies, vous pouvez commencer à créer des
           fiches et les associer aux utilisateurs.
         </Paragraph>
         <CustomCardActions>
@@ -76,15 +76,15 @@ export const GettingStarted = () => {
       <CustomCard>
         <CustomCardTitle>4 - Statistiques</CustomCardTitle>
         <Paragraph>
-          Une fois que l'on a realiser des fiches dans la societe, la page des
-          statistiques permet une visualisation de l'activité de la societe a
-          travers ses fiches sur une période donnée avec des critères
+          Une fois que vous avez realisé des fiches dans la société, la page des
+          statistiques permet une visualisation de l'activité de la celle-ci à
+          travers ses fiches sur une période donnée, avec des critères
           spécifiques.
         </Paragraph>
 
         <DocImage
           src={statisticsImg}
-          alt="Page des statistiques de la societe"
+          alt="Page des statistiques de la société"
         />
 
         <CustomCardActions>

@@ -19,24 +19,24 @@ export const SheetsCivility = () => {
     <>
       <CustomCard>
         <CustomCardTitle>
-          Civilitée d'une fiche
+          Civilité d'une fiche
           <Badge>Défunt uniquement</Badge>
         </CustomCardTitle>
 
         <Paragraph>
-          La définition de la civilitée est une etape importante dans le cadre
-          de fiche de defunt. Elle est divisée en plusieurs groupe. On y trouve
-          la partie civilite pure permetant de definir les informations basique
-          tel que le nom, le prenom, le nom par alliance ainsi que la civilitée
-          de la personne.
+          La définition de la civilité est une étape importante dans le cadre de
+          fiche de défunt. Elle est divisée en plusieurs groupes. <br /> On y
+          trouve la partie civilité pure, permetant de définir les informations
+          basiques tels que : <br /> - le nom d'usage, <br /> - prénom, <br /> -
+          nom par alliance, <br /> - le titre de civilité de la personne.
           <br />
-          Suivi par deux groupes avec les informations sur la naissance du
-          défunt ainsi que son décès. Cela permet nottament de remplir le
-          certificat de crémation.
+          Ensuite, on y trouve deux autres groupes, celles avec les informations
+          sur la naissance du défunt ainsi que celles de son décès. Cela permet
+          notamment de remplir le certificat de crémation.
           <br />
           <Bolder>
-            Cette partie n'est pas disponible lors-ce que la fiche est associée
-            a un reliquaire.
+            Cette partie n'est pas disponible lorsque la fiche est associée à un
+            reliquaire.
           </Bolder>
         </Paragraph>
 

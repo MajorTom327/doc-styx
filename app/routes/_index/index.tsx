@@ -43,18 +43,18 @@ export default function Index() {
       <CustomCard>
         <CustomCardTitle>
           <h1 className="text-2xl font-primary">
-            Bienvenue sur la documentation de l'application Styx
+            Bienvenue sur la documentation de l'application Styx.
           </h1>
         </CustomCardTitle>
         <Paragraph indent>
           Cette documentation a pour but de vous aider à comprendre comment
-          utiliser l'application Styx de la maniere la plus efficace possible.
-          C'est notament utile lors de la prise en main de l'application ou pour
-          comprendre comment fonctionne certaines fonctionnalités.
+          utiliser l'application Styx de la manière la plus efficace possible.
+          Elle est notamment utile lors de la prise en main de l'application, ou
+          pour comprendre comment utiliser certaines fonctionnalités.
         </Paragraph>
         <DocImage src={dashboardImg} alt="Affichage du tableau de bord" />
         <Paragraph>
-          Cette documentation est divisée en plusieurs parties, chacune d'entre
+          Cette documentation est divisée en plusieurs parties. Chacune d'entre
           elles correspond à une fonctionnalité de l'application.
         </Paragraph>
         <CustomCardActions>

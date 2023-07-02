@@ -21,10 +21,9 @@ export const StatisticsIndex = () => {
       <CustomCard>
         <CustomCardTitle>Statistiques</CustomCardTitle>
         <Paragraph>
-          La page des staatistiques permet de comprendre l'activité de la
-          société et des utilisateurs en visualisant les fiches en fonction de
-          multiples criteres. Actuellement la page est en cours de
-          developpement.
+          La page des statistiques permet de comprendre l'activité de la société
+          et des utilisateurs en visualisant les fiches en fonction de multiples
+          critères. Actuellement, la page est en cours de développement.
         </Paragraph>
         <DocImage
           src={statisticsImg}
