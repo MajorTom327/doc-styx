@@ -29,7 +29,7 @@ export const SocietyUsers = () => {
           attribuer des fiches (Les définir comme en charge de la fiche){" "}
           <Bolder>si l'utilisateur n'est pas désactivé.</Bolder>
           Pour savoir si un utilisateur est actif, il suffit de regarder la
-          petite pastille verte (Si actif) ou rouge (Si désactivé). <br /> Vous
+          petite pastille verte (si actif) ou rouge (si désactivé). <br /> Vous
           ne pouvez pas désactiver ou supprimer votre propre compte.
         </Paragraph>
 
@@ -37,9 +37,9 @@ export const SocietyUsers = () => {
 
         <Paragraph>
           L'invitation d'un nouvel utilisateur au sein de la société se fait à
-          travers un formulaire simple demandant certaines informations pour
+          travers un formulaire simple, demandant certaines informations pour
           configurer le nouveau compte. Il s'agit notamment de la civilité de la
-          personne ainsi que de son addresse e-mail associée. Une fois validées,
+          personne ainsi que de son adresse e-mail associée. Une fois validées,
           l'utilisateur recevra un email pour accepter l'invitation au sein de
           votre société.
         </Paragraph>
